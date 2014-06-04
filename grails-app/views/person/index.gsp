@@ -1,72 +1,18 @@
-<html> 
+<html>
 <head>
 	<meta name="layout" content="main"/>
-	<title>Persons of interest</title>
-	<style>
-		html {
-			background: url(http://placehold.it/1200x1200) no-repeat center center fixed; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-		body {
-			padding-top: 20px;
-			font-size: 16px;
-			font-family: "Open Sans",serif;
-			background-color: rgba(255, 255, 255, 0.9);
-		}
-
-	</style>
+	<title>The Landing Page</title>
 </head>
 <body>
-<div class="container">
 	<div class="row">
-		<div class="navbar-wrapper">
-			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse
-				  " data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				  <a class="navbar-brand" href="#">Project name</a>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li class="dropdown-header">Nav header</li>
-								<li><a href="#">Separated link</a></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			 </div>
-		</div>
 		<div class="jumbotron">
-			<h1>Big Headline!</h1>
+			<h1>Groovy on Rails!</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-				ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-				non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Grails is an open source web application framework that uses the Groovy programming language (which is in turn based on the Java platform). It is intended to be a high-productivity framework by following the "coding by convention" paradigm, providing a stand-alone development environment and hiding much of the configuration detail from the developer.<sup>[citation needed]</sup>
 			</p>
 			<p>
-				<a class="btn btn-large btn-primary">Get Exclusive Access!</a> 
-				<a class="btn btn-large">Learn More</a>
+				<a class="btn btn-large btn-primary">Useless button!</a> 
+				<a class="btn btn-large">Useless Link!</a>
 			</p>
 		</div>
 		<div id="myCarousel" class="carousel slide">
@@ -110,13 +56,13 @@
 		  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 		  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-9">
 			<table class="table">  
 				<thead>
 					<tr>
-						<th>Student-ID</th>  
-						<th>First Name</th>  
+						<th>ID#</th>  
 						<th>Last Name</th>  
+						<th>First Name</th>  
 						<th>Age</th> 
 					</tr>
 				</thead>
@@ -126,39 +72,25 @@
 						<td> ${i+1} </td>
 						<td> ${person.lastName} </td>
 						<td> ${person.firstName} </td>
-						<td> Age: ${person.age} </td>
+						<td> ${person.age} </td>
 					</tr>
 					</g:each>
 				</tbody>  
 			 </table>
-			 
-			 <g:link url="form"> new entry </g:link>
-			 
-			 <form action="/mailing-list" method="post">
-				<p class="input-group">
-					<span class="input-group-addon">@</span>
-					<input type="text" class="form-control input-lg" name="email" placeholder="jonsnow@knowsnothi.ng" />
-				</p>
-				<p class="help-block"><small>We won't send you spam. Unsubscribe at any time.</small></p>
-				<p>
-					<button type="submit" class="btn btn-success btn-lg">Keep me posted</button>
-				</p>
-			</form>
+			 <div class="row">
+				<g:link class="btn btn-primary btn-small pull-right" url="form"> Add Entry </g:link>
+			</div>
 			<div class="span4">
-				<h3>Selling Point 1</h3>
+				<h3>Bootstrap (front-end framework)</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-					ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-					laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-					voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-					non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. It is the No.1 project on GitHub with 65,000+ stars and 23,800 forks (as of March 2014) <sup>[1]</sup> and has been used by NASA and MSNBC, among many others.<sup>[2][3]</sup>
 				</p>
 				<p>
-					<a class="btn">Learn More</a>
+					<a class="btn">Useless Link!</a>
 				</p>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<!-- Vertical Menu -->
 			<ul class="nav nav-stacked">
 				<li><a href="#">A</a></li>
@@ -169,6 +101,5 @@
 		</div>
 	
 	</div>
-</div>
 </body>
 </html>

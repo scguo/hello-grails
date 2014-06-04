@@ -5,18 +5,26 @@
 		<title>Form</title>
 	</head>
 	<body>
-        <g:form controller="person" action="save">
-            <label>First Name: </label>
-            <g:textField name="firstName"/><br/>
-
-            <label>Last Name: </label>
-            <g:textField name="lastName"/><br/>
-
-            <label>Age: </label>
-            <g:textField name="age"/><br/>
-
-            <g:actionSubmit value="Save"/>
-			<g:link url="index"> jk </g:link>
-        </g:form>
+		<div class="row">
+			<g:form controller="person" action="save">
+				<p class="input-group">
+					<span class="input-group-addon">Aa</span>
+					<input type="text" class="form-control input-medium" name="firstName" placeholder="First Name" />
+				</p>
+				<p class="input-group">
+					<span class="input-group-addon">Aa</span>
+					<input type="text" class="form-control input-medium" name="lastName" placeholder="Last Name" />
+				</p>
+				<p class="input-group">
+					<span class="input-group-addon"> &nbsp;#&nbsp; </span>
+					<input type="text" class="form-control input-medium" name="age" placeholder="Age" />
+				</p>
+				<p class="help-block"><small>Trust me, you should do this.</small></p>
+				<div class="form-actions">
+					<g:actionSubmit class="btn btn-primary" value="Save"/>
+					<g:link url="index"> jk </g:link>
+				</div>
+			</g:form>
+		</div>
 	</body>
 </html>
