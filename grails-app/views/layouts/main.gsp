@@ -17,6 +17,7 @@
 			font-size: 16px;
 			font-family: "Open Sans",serif;
 			background-color: rgba(255, 255, 255, 0.9);
+			padding: 1em;
 		}
 
 	</style>

@@ -76,8 +76,8 @@
 					</tr>
 					</g:each>
 				</tbody>  
-			 </table>
-			 <div class="row">
+			</table>
+			<div class="row">
 				<g:link class="btn btn-primary btn-small pull-right" url="form"> Add Entry </g:link>
 			</div>
 			<div class="span4">

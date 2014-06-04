@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<div class="row">
-			<g:form controller="person" action="save">
+			<g:form class="col-md-3" controller="person" action="save">
 				<p class="input-group">
 					<span class="input-group-addon">Aa</span>
 					<input type="text" class="form-control input-medium" name="firstName" placeholder="First Name" />
