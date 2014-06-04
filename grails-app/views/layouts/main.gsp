@@ -19,45 +19,45 @@
 			background-color: rgba(255, 255, 255, 0.9);
 			padding: 1em;
 		}
-
 	</style>
+	<asset:stylesheet href="navbar.css"/>
+	
 </head>
-
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="navbar-wrapper">
-				<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse
-					  " data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					  <a class="navbar-brand" href="#">Steve Guo</a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li class="divider"></li>
-									<li class="dropdown-header">Nav header</li>
-									<li><a href="#">Separated link</a></li>
-									<li><a href="#">One more separated link</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				 </div>
+				<div class="container">
+					<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<g:link class="navbar-brand" url="index"> Steve Guo </g:link>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#"> Home </a></li>
+								<li><g:link url="form"> Add </g:link></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Nothing</a></li>
+										<li><a href="#">To See</a></li>
+										<li><a href="#">Here</a></li>
+										<li class="divider"></li>
+										<li class="dropdown-header">more...</li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Zelda</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					 </div>
+				</div>
 			</div>
 		</div>
 	  <g:layoutBody/>
