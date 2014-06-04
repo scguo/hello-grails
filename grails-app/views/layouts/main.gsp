@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--
+	Thank http://getbootstrap.com/examples/carousel/ for ideas
+-->
 <html>
 <head>
 	<title><g:layoutTitle default="Grails"/></title>

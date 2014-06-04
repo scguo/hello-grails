@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--
+	Thank http://grails.asia/grails-tutorial-for-beginners/ for everything
+-->
 <html>
 	<head>
 		<meta name="layout" content="main"/>

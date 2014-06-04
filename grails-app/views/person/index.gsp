@@ -1,3 +1,6 @@
+<!--
+	Thank http://www.lukepeerfly.com/bootstrap-build-awesome-landing-pages for ideas
+-->
 <html>
 <head>
 	<meta name="layout" content="main"/>
