@@ -2,15 +2,17 @@ package helloworld
 
 class PersonController {
 	def index() {
+		println "PersonController's Index"
         def persons = Person.list()
         [persons:persons]
     }
 	def form() {
+		println "PersonController's Form"
     }
 	def save() {
+		println "PersonController's Save"
+	
 		def person = new Person(params)
-		
-		println ""
 		params.each { key,value->
 			println "${key} -> ${value}"
 		}
@@ -18,6 +20,8 @@ class PersonController {
         person.save()
 	}
 	def delete() {
+		println "PersonController's Delete"
+
 		def id = params['id']
 		def p = Person.get(id)
 		if (p) {
@@ -27,5 +31,4 @@ class PersonController {
 			println "flop"
 		}
 	}
-
 }
