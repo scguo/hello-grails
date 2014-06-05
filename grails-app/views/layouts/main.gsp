@@ -24,7 +24,6 @@
 		}
 	</style>
 	<asset:stylesheet href="navbar.css"/>
-	
 </head>
 <body>
 	<div class="container">
@@ -39,12 +38,12 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<g:link class="navbar-brand" url="index"> Steve Guo </g:link>
+							<g:link class="navbar-brand" uri="/"> Steve Guo </g:link>
 						</div>
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#"> Home </a></li>
-								<li><g:link url="form"> Add </g:link></li>
+								<li><g:link controller="person" action="index"> Home </g:link></li>
+								<li><g:link controller="person" action="form"> Add </g:link></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
 									<ul class="dropdown-menu">
@@ -67,4 +66,11 @@
 	</div>
 	<asset:javascript src="application.js"/>
 </body>
+<script type="text/javascript">
+        var url = window.location;
+        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+        $('ul.nav a').filter(function() {
+             return this.href == url;
+        }).parent().addClass('active');
+</script>
 </html>
