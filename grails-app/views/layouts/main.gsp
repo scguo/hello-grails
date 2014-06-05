@@ -5,7 +5,6 @@
 <html>
 <head>
 	<title><g:layoutTitle default="Grails"/></title>
-	<asset:stylesheet src="application.css"/>
 	<g:layoutHead/>
 	<style>
 		html {
@@ -23,7 +22,18 @@
 			padding: 1em;
 		}
 	</style>
+	<asset:stylesheet src="application.css"/>
 	<asset:stylesheet href="navbar.css"/>
+	<asset:javascript src="application.js"/>
+	<script type="text/javascript">
+		$( document ).ready(function () {
+			var url = window.location;
+			$('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+			$('ul.nav a').filter(function() {
+				 return this.href == url;
+			}).parent().addClass('active');
+		});
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -64,13 +74,5 @@
 		</div>
 	  <g:layoutBody/>
 	</div>
-	<asset:javascript src="application.js"/>
 </body>
-<script type="text/javascript">
-        var url = window.location;
-        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
-        $('ul.nav a').filter(function() {
-             return this.href == url;
-        }).parent().addClass('active');
-</script>
 </html>
