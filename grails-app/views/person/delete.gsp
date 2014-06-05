@@ -17,7 +17,7 @@
 		 <small>by <cite>Albert Einstein</cite></small>
 	</blockquote>
 	<div class="row text-center">
-		<g:link class="btn btn-primary btn-small" url="index"> Return </g:link>
+		<g:link class="btn btn-primary btn-small" action="index"> Return </g:link>
 	</div>
 </body>
 </html>

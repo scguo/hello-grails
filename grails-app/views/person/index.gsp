@@ -56,41 +56,35 @@
 						<th>ID#</th>  
 						<th>Last Name</th>  
 						<th>First Name</th>  
-						<th>Age</th> 
+						<th>Age</th>
+						<th>Del</th>
 					</tr>
 				</thead>
-				<tbody>  
+				<tbody>
 					<g:each in="${persons}" var="person" status="i">
 					<tr>
 						<td> ${person.id} </td>
 						<td> ${person.lastName} </td>
 						<td> ${person.firstName} </td>
 						<td> ${person.age} </td>
+						<td> <g:link controller="person" action="delete" id="${person.id}"> X </g:link> </td>
 					</tr>
 					</g:each>
 				</tbody>
 			</table>
-			<g:form class="col-md-3" controller="person" action="delete">
-				<p class="input-group">
-					<span class="input-group-addon"> &nbsp;#&nbsp; </span>
-					<input type="text" class="form-control input-medium" name="id" placeholder="id" />
-				</p>
-				<div class="form-actions">
-					<g:actionSubmit class="btn btn-primary" value="Delete"/>
-				</div>
-			</g:form>
-			<div class="row">
-				<g:link class="btn btn-primary btn-small pull-right" url="form"> Add Entry </g:link>
-			</div>
-			<div class="span4">
-				<h3>Bootstrap (front-end framework)</h3>
-				<p>
-					Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. It is the No.1 project on GitHub with 65,000+ stars and 23,800 forks (as of March 2014) <sup>[1]</sup> and has been used by NASA and MSNBC, among many others.<sup>[2][3]</sup>
-				</p>
-				<p>
-					<a class="btn">Useless Link!</a>
-				</p>
-			</div>
+		</div>
+		<div class="col-md-9">
+			<g:link class="btn btn-primary btn-small pull-right" action="form"> Add Entry </g:link>
+		</div>
+		<div class="col-md-9">
+			<h3>Bootstrap (front-end framework)</h3>
+			<p>
+				Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. It is the No.1 project on GitHub with 65,000+ stars and 23,800 forks (as of March 2014) <sup>[1]</sup> and has been used by NASA and MSNBC, among many others.<sup>[2][3]</sup>
+			</p>
+			<p>
+				<a class="btn">Useless Link!</a>
+			</p>
+
 		</div>
 		<div class="col-md-3">
 			<!-- Vertical Menu -->
