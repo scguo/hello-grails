@@ -62,7 +62,7 @@
 				<tbody>  
 					<g:each in="${persons}" var="person" status="i">
 					<tr>
-						<td> ${i+1} </td>
+						<td> ${person.id} </td>
 						<td> ${person.lastName} </td>
 						<td> ${person.firstName} </td>
 						<td> ${person.age} </td>

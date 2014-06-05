@@ -19,9 +19,12 @@ class PersonController {
 	}
 	def delete() {
 		def id = params['id']
-		if (id) {
-			def p = Person.get(id)
+		def p = Person.get(id)
+		if (p) {
 			p.delete(flush:true)
+			println "gtho"
+		} else {
+			println "flop"
 		}
 	}
 
