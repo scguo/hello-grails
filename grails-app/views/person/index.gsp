@@ -8,16 +8,6 @@
 </head>
 <body>
 	<div class="row">
-		<div class="jumbotron">
-			<h1>Groovy on Rails!</h1>
-			<p>
-				Grails is an open source web application framework that uses the Groovy programming language (which is in turn based on the Java platform). It is intended to be a high-productivity framework by following the "coding by convention" paradigm, providing a stand-alone development environment and hiding much of the configuration detail from the developer.<sup>[citation needed]</sup>
-			</p>
-			<p>
-				<a class="btn btn-large btn-primary">Useless button!</a> 
-				<a class="btn btn-large">Useless Link!</a>
-			</p>
-		</div>
 		<div id="myCarousel" class="carousel slide">
 		  <ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -78,8 +68,17 @@
 						<td> ${person.age} </td>
 					</tr>
 					</g:each>
-				</tbody>  
+				</tbody>
 			</table>
+			<g:form class="col-md-3" controller="person" action="delete">
+				<p class="input-group">
+					<span class="input-group-addon"> &nbsp;#&nbsp; </span>
+					<input type="text" class="form-control input-medium" name="id" placeholder="id" />
+				</p>
+				<div class="form-actions">
+					<g:actionSubmit class="btn btn-primary" value="Delete"/>
+				</div>
+			</g:form>
 			<div class="row">
 				<g:link class="btn btn-primary btn-small pull-right" url="form"> Add Entry </g:link>
 			</div>
@@ -96,7 +95,7 @@
 		<div class="col-md-3">
 			<!-- Vertical Menu -->
 			<ul class="nav nav-stacked">
-				<li><a href="#">A</a></li>
+				<li><a href="http://localhost:8080/helloworld/dbconsole/">H2 Database</a></li>
 				<li><a href="#">B</a></li>
 				<li><a href="#">C</a></li>
 				<li><a href="#">D</a></li>
